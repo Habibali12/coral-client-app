@@ -7,14 +7,21 @@ import CategoryThree from "../images/category/image3.png"
 import CategoryFour from "../images/category/image4.png"
 import CategoryFive from "../images/category/image5.png"
 
+import BrandOne from "../images/company/brand1.png"
+import BrandTwo from "../images/company/brand2.png"
+import BrandThree from "../images/company/brand3.png"
+import BrandFour from "../images/company/brand4.png"
+import BrandFive from "../images/company/brand5.png"
+
+
 const Category = () => {
   
   const companyLogo = [
-    {id: 1, src: "../images/company/brand1.png"},
-    {id: 2, src: "../images/company/brand2.png"},
-    {id: 3, src: "../images/company/brand3.png"},
-    {id: 4, src: "../images/company/brand4.png"},
-    {id: 5, src: "../images/company/brand5.png"}
+    {id: 1, src: BrandOne},
+    {id: 2, src: BrandTwo},
+    {id: 3, src: BrandThree},
+    {id: 4, src: BrandFour},
+    {id: 5, src: BrandFive}
   ]
 
   return (
@@ -25,7 +32,7 @@ const Category = () => {
         <div className='flex items-center justify-around flex-wrap gap-4 py-5'>
             {
                 companyLogo.map(({id, src}) => (
-                    <div><img key={id} src={src} alt="Brand Image" /></div>
+                    <div key={id}><img src={src} alt="Brand Image" /></div>
                 ))
             }
         </div>
